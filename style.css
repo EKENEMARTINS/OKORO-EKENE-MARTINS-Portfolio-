@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #111;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00adb5;
+}
+
+/* HEADER */
+header {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #00adb5, #007bff);
+    color: white;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* SKILLS */
+.skills {
+    padding: 60px 20px;
+    background: white;
+}
+
+.skills ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.skills li {
+    background: #e3f2fd;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 6px;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 60px 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #f0f0f0;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: #e3f2fd;
+}
+
+/* JOURNEY */
+.journey {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
