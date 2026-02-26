@@ -22,6 +22,17 @@
     <meta name="twitter:description" content="Hi, I'm Ekene! Aspiring Software Developer creating real-world projects with HTML, CSS, and soon JavaScript.">
     <meta name="twitter:image" content="https://ekenemartins.github.io/OKORO-EKENE-MARTINS-Portfolio-/ekene2.jpg?v=2">
     <meta name="twitter:url" content="https://ekenemartins.github.io/OKORO-EKENE-MARTINS-Portfolio-/">
+
+<script>
+    const timestamp = new Date().getTime();
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+        link.href += `?v=${timestamp}`;
+    });
+    document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]').forEach(meta => {
+        meta.content += `?v=${timestamp}`;
+    });
+</script>
+    
 </head>
 <body>
 
